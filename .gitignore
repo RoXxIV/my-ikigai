@@ -1,0 +1,24 @@
+# Nuxt dev/build outputs
+my-ikigai/.output
+my-ikigai/.data
+my-ikigai/.nuxt
+my-ikigai/.nitro
+my-ikigai/.cache
+my-ikigai/dist
+
+# Node dependencies
+my-ikigai/node_modules
+
+# Logs
+my-ikigai/logs
+my-ikigai/*.log
+
+# Misc
+my-ikigai/.DS_Store
+my-ikigai/.fleet
+my-ikigai/.idea
+
+# Local env files
+my-ikigai/.env
+my-ikigai/.env.*
+my-ikigai/!.env.example
