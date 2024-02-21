@@ -25,5 +25,15 @@ html {
     color: $black;
     font-family: $redhat;
     transition: background-color 0.3s ease, color 0.3s ease;
+
+    button {
+      @include button($white);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
   }
 }

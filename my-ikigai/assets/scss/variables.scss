@@ -9,3 +9,38 @@ $green: #8de37f;
 $blue: #75abfd;
 $yellow: #e9dc65;
 $purple: #a555ec;
+
+/********** Mixins **********/
+/* Button __________*/
+@mixin button($textColor) {
+  padding: 8px 16px;
+  border: 2px solid $purple;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: $purple;
+  color: $textColor;
+  font-family: $redhat;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}
+/* Media Queries __________*/
+@mixin media-max($max-width) {
+  @media (max-width: $max-width) {
+    & {
+      @content;
+    }
+  }
+}
